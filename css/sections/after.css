@@ -52,6 +52,12 @@
     align-items: center;
 }
 
+.video-discription {
+    color : red;
+    letter-spacing: px;
+
+}
+
 .blog-discription span {
     color : #bbb;
     font-size: 13px;
