@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/sections/main.css" />
+    <link rel = "shortcut icon" href = "./favicon.ico" >
+
+    <title>리앤리의원</title>
+  </head>
+
+  <body>
+  <!-- 공통 부분-->
+    <header>
+      <div class="logo cursor" onclick="location.href = '#'">
+        <img src = "./images/logo1.png" />
+      </div>
+    </header>
+
+    <nav class="sticky">
+      <ul class = "nav">
+        <li onclick = "location.href = './html/introduce.html'">리앤리 소개</li>
+        <li onclick = "location.href = './html/allInOne.html'">올인원 시술</li>
+        <li onclick = "location.href = './html/after.html'">시술 후기</li>
+        <li onclick = "location.href = './html/caution.html'">시술후 주의사항</li>
+        <li onclick = "location.href = './html/way.html'">오시는 길</li>
+      </ul>
+    </nav>
+
+  <!-- 메인 콘텐츠 영역-->
+    <section>
+      <article id = "intro"><!-- 리앤리 소개-->
+        <h1>리앤리의원</h1><br>
+        <p>피부의 자연스러운 아름다움을 추구하는 리앤리의원 입니다.</p><br><Br><br>
+        <div class = "view_more intro_detail cursor" onclick="location.href = './html/introduce.html'"/>리앤리 소개</div>
+      </article>
+
+      <article id = "allInOne"><!-- 올인원 시술 간략 소개-->
+        <div class = "discription">
+          <h1>올인원 시술</h1>
+          <p>시술 받으시는 분의 피부상태를 파악한 후<br> 그 상태에 필요한 시술들을 모두 한번에 해드리는 시술입니다.</p><br>
+          <ul>
+            <p>- 리앤리 올인원 시술로 개선시킬수 있는 피부 -</p>
+            <li>여드름 피부</li>
+            <li>늘어진 모공</li>
+            <li>주근깨, 잡티, 검버섯</li>
+            <li>피부노화에 의한 미세 잔주름</li>
+            <li>여드름 흉터, 긁힌 흉터</li>
+            <li>거칠고 칙칙한 피부톤</li>
+            <li>한관종, 비립종, 편평사마귀</li>
+          </ul>
+          <Br>
+          <div class = "view_more cursor" onclick="location.href='./html/allInOne.html'">올인원 시술 자세히 보기</div>
+        </div>
+
+
+      </article>
+
+      <article><!-- 리앤리 스페이스-->
+        <p class = "space_name">- 리앤리 스페이스 -</p>
+        <div class = "slider_wrap" onclick = "location.href = './html/introduce.html'">
+          <ul class = "slider">
+            <li><img src="./images/slider_images/1.jpg" alt = "space_1"></li>
+            <li><img src="./images/slider_images/2.jpg" alt = "space_2"></li>
+            <li><img src="./images/slider_images/3.jpg" alt = "space_3"></li>
+            <li><img src="./images/slider_images/4.jpg" alt = "space_4"></li>
+            <li><img src="./images/slider_images/5.jpg" alt = "space_5"></li>
+            <li><img src="./images/slider_images/6.jpg" alt = "space_6"></li>
+            <li><img src="./images/slider_images/7.jpg" alt = "space_7"></li>
+            <li><img src="./images/slider_images/8.jpg" alt = "space_8"></li>
+          </ul>
+          <!-- 컨트롤 화살표-->
+          <div class = "btns" id = "next"></div>
+          <div class = "btns" id = "previous"></div>
+
+        </div>
+
+      </article>
+      <div class="flex-container">
+        <div class = "flex-div location" onclick = "location.href = './html/way.html'">
+          <h3>오시는 길</h3>
+          <div class = "map-icon"></div>
+          <p>클릭하시면 위치를 확인할 수 있습니다.</p>
+        </div>
+
+        <!-- 리앤리 대표번호 -->
+        <div class = "flex-div contact">
+          <h3>리앤리 대표번호</h3>
+          <h1>02-833-1751</h1>
+          <div class = "call cursor" onclick="document.location.href='tel:02-833-1751'">상담 및 예약하기</div>
+        </div>
+
+        <!-- 리앤리 진료시간 -->
+        <div class = "flex-div time">
+          <h3>리앤리 진료시간</h3>
+          <div class = "time_dis">
+            <p>[평 &nbsp;&nbsp;&nbsp;일] &nbsp;&nbsp;&nbsp;오전 10:00 ~ 오후 06:30<br>
+            [토요일] &nbsp;&nbsp;&nbsp;오전 10:00 ~ 오후 <span style="color: lightskyblue">02:30</span><br>
+              <span style="font-size: 14px">(토요일은 점심시간 없이 진료합니다)</span></p>
+
+            <p>[점심시간] 오후 12:30 ~ 오후 02:00<br>
+            <span style="color : orange">일요일 및 공휴일은 휴진입니다.</span></p>
+          </div>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>서울특별시 구로구 경인로67길 23 신도림동 338 신도림2차푸르지오 101동 309호 | TEL : 02-833-1751<br>
+        상호명 : 리앤리가정의학과의원 | 대표 : 이규완 원장
+      </p><br>
+      <p style="color:#222">Copyright 2020 L&L Family Medicine | All Rights Reserved</p>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+@import "../struct.css";
+
+.way {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.way > div {
+    width : 49%;
+    height : 500px;
+    border : 1px solid #ddd;
+}
+
+.map > iframe {
+    width : 100%;
+    height : 100%;
+}
+
+.way-info {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items : center;
+    font-weight : lighter;
+    padding : 20px;
+    box-sizing: border-box;
+
+}
+
+/* way-info title css */
+.way-info .way-title {
+    text-align: center;
+}
+
+.way-title span {
+    color : #666;
+ }
+.way-title p {
+    font-size : 30px;
+    margin : 0;
+}
+
+/* way-info more map css */
+.more_maps {
+    display : flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap : wrap;
+}
+
+.more_maps > div {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+    width : 120px;
+    height : 50px;
+    border : 1px solid #bbb;
+    margin : 10px;
+    cursor : pointer;
+}
+
+.more_maps > div:hover {
+    transition : all 0.3s ease-in-out;
+    box-shadow : 0.5px 0.5px 0.5px 0.5px #eee;
+}
+
+.more_maps .naver:hover {
+    color : #19CE60;
+    border : 1px solid #19CE60;
+}
+
+.more_maps .kakao:hover {
+    color : #FFD050;
+    border : 1px solid #FFD050;
+}
+
+.more_maps .google:hover {
+    color : #4285F4;
+    border : 1px solid #4285F4;
+}
+
+@media all and (max-width: 700px) {
+    .way > div {
+        width : 90%;
+        min-height: 80vw;
+        height : auto;
+    }
+
+    .more_maps {
+        flex-direction: column;
+    }
+}
+
+/* 애니메이션 css */
+.way-info div {
+    animation-delay: 0.5s;
+    animation : fadeInText 1s linear forwards;
+}

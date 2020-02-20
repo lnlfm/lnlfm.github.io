@@ -1,0 +1,157 @@
+@import "../struct.css";
+
+/* 리앤리 소개 - 디테일 */
+.intro_contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap : wrap;;
+  margin : 20px 0;
+
+}
+
+#doctor_detail {
+  position: relative;
+  text-align: center;
+}
+
+.intro_contents > div {
+  width : 300px;
+  height: 400px;
+  margin: 20px;
+  font-size : 20px;
+}
+
+#profile_img > img {
+  height: 400px;
+}
+
+#discript {
+  border-left: 2px solid #9D669D;
+  border-right: 2px solid #9D669D;
+}
+#discript > ul {
+  list-style: none;
+  padding : 0;
+  text-align: center;
+}
+
+
+
+
+/* 리앤리 소개 - 인사말 */
+
+#doctor {
+  padding: 20px 0;
+  background-image: url("../../images/banner_intro.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color : #eee;
+  background-size: auto 100%;
+
+}
+
+#doctor > div {
+  padding : 10px 15px;
+  width : auto;
+  max-width : 780px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight : 200;
+  margin : 1px 0 ;
+  white-space: normal;
+
+}
+
+
+/* 리앤리 소개 - 리앤리 둘러보기 */
+#linli_around {
+
+  text-align: center;
+
+
+}
+
+#linli_around .linli_images {
+  margin : 0 auto;
+  padding : 10px 0;
+  text-align: center;
+  width : 90%;
+  height : auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap : wrap;
+}
+
+.linli_images .linli_image {
+  margin : 10px;
+  width : 480px;
+  height : 330px;
+  background-color: #ccc;
+  background-size : 100% 100%;
+}
+
+.linli_images .linli_image:hover {
+  transform: scale(1.1, 1.1);
+  transition : transform 0.5s linear;
+}
+
+
+
+
+
+/* 리앤리 소개 기본 구조 */
+article {
+}
+
+/* 반응형 */
+
+@media all and (max-width: 1200px) {
+  #doctor > div {
+    font-size: 100%;
+  }
+}
+
+@media all and (max-width : 600px){
+  .linli_images .linli_image {
+    height : 50vw;
+  }
+
+  .linli_images .linli_image:hover {
+    transform: scale(1.1, 1.1)
+  }
+}
+
+
+/* 애니메이션 css */
+.intro_discript p {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.intro_discript p:first-child {
+  animation : fadeInText 1s linear forwards;
+  animation-delay: 0.5s;
+}
+
+.intro_discript p:nth-child(2){
+  animation : fadeInText 1s linear forwards;
+  animation-delay: 1.5s;
+}
+
+.intro_discript p:nth-child(3){
+  animation : fadeInText 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.intro_discript p:nth-child(4){
+  animation : fadeInText 1s linear forwards;
+  animation-delay: 3.5s;
+}
+
+.intro_discript p:nth-child(5){
+  animation : fadeInText 1s linear forwards;
+  animation-delay: 4.5s;
+}

@@ -1,0 +1,163 @@
+@import "../struct.css";
+
+article {
+    font-weight: lighter;
+}
+
+/* 올인원 시술이란 - article css */
+.all-intro {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding : 40px 0
+}
+
+.all-intro p {
+    margin : 0 auto;
+}
+
+.all-d {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.all-m {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+
+/* 올인원 시술로 개선시킬수 있는 피부 - article css */
+.all-improve {
+    position : relative;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 45px;
+}
+
+.all-improve h1 {
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.all-improve ul {
+    padding : 0;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.all-improve li {
+
+    margin : 5px 0;
+}
+
+/* 시술과정 - article css */
+.all-process {
+    background-image: url("../../images/allinOne-bg.jpg");
+    overflow: hidden;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+h1 {
+    font-size : 30px;
+    text-align: center;
+}
+
+.all-process h3 {
+    font-size : 25px;
+    font-weight: lighter;
+    padding : 8px 0;
+}
+.all-process h1, .all-process h3 {
+
+}
+
+.all-process ul {
+    list-style: none;
+    text-align: left;
+}
+
+
+/* 동적웹 */
+@media all and (max-width: 1200px) {
+    /* article - 올인원 반응형 */
+    .all-d {
+        height: 200px;
+    }
+    .all-d > p{
+        display: none;
+    }
+    .all-m {
+        display: inline-block;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .all-improve h1 {
+        font-size: 4.5vw;
+    }
+    .all-improve li {
+        font-size: 4vw;
+    }
+    .all-process {
+        height: auto;
+    }
+
+    .all-process h3 {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+
+    }
+}
+
+@media all and (max-width : 560px) {
+    .all-m {
+        font-size: 4.3vw;
+    }
+    .all-improve {
+        margin-top : 10px;
+    }
+}
+
+/* 애니메이션 css */
+.all-intro p, .all-improve {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.all-intro p:first-child {
+    animation : fadeInText 1s linear forwards;
+    animation-delay: 0.5s;
+}
+
+.all-intro p:nth-child(2){
+    animation : fadeInText 1s linear forwards;
+    animation-delay: 1s;
+}
+
+.all-improve {
+    animation : fadeInText 1s linear forwards;
+    animation-delay: 1.5s;
+}
+

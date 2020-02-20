@@ -1,0 +1,325 @@
+@import "../struct.css";
+
+/* article 컨텐츠 - 인트로 */
+#intro {
+  text-align: center;
+  padding: 80px 0 30px 0;
+  overflow: hidden;
+  background: url("../../images/linli_intro.png") no-repeat;
+  background-position: center;
+  background-size: 1130px 100%;
+  background-attachment: fixed;
+  color: #bbb;
+  height: 400px;
+}
+
+#intro > h1 {
+  display: inline-block;
+  font-size: 50px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+#intro > p {
+  padding: 0 30px;
+  font-size: 25px;
+  font-weight: lighter;
+  animation-delay: 0.5s;
+  animation : fadeInText 1s linear forwards;
+}
+
+.intro_detail:hover {
+  background-color: #111 !important;
+  opacity: 0.8;
+  border: 1px hidden !important;
+  color: #fff;
+}
+
+/* article 컨텐츠 - 리앤리 스페이스 */
+.space_name {
+  padding: 50px 0 10px 0;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.slider_wrap {
+  padding: 10px 30%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.slider {
+  list-style: none;
+  width: calc(100% * 8); /* 이미지 개수에 따라 조절 */
+  display: flex;
+  animation: slide 40s infinite;
+  padding: 0;
+}
+
+.slider > li {
+  width: calc(100% / 8); /* 이미지 개수에 따라 조절 */
+  background-color: #fff2f7;
+  margin: 0 20px;
+}
+
+.slider > li > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 슬라이더 버튼 */
+.btns {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+}
+
+#next {
+  right: 0;
+}
+#previous {
+  left: 0;
+}
+
+/* article 컨텐츠 - 올인원 시술*/
+#allInOne {
+  text-align: left;
+  padding: 20px 0 20px 0;
+  background-image: url("../../images/bg_allInOne.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 1;
+  z-index: -1;
+}
+.discription {
+  text-align: center;
+  padding: 20px 80px 20px 80px;
+  font-weight: lighter;
+}
+.discription > h1 {
+  margin: 0 auto;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.discription p, .discription li {
+  animation-delay: 0.5s;
+  animation : fadeInText 1s linear forwards;
+}
+.discription > p {
+  font-size: 30px;
+}
+
+.discription > ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.discription > ul > p {
+  font-size: 25px;
+}
+
+.discription > .view_more:hover {
+  color : #673A71;
+}
+
+/* flexbox 컨텐츠 */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -5px;
+  overflow: hidden;
+}
+
+.flex-div {
+  padding: 10px 30px 30px 30px;
+  margin: 5px;
+  flex: 1 1 auto;
+  background-color: #fde0e1;
+  min-width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+
+/* 위치 */
+.location {
+  cursor : pointer;
+  background-color: #b068b0;
+  color: #fff;
+}
+.location > img {
+  width: 40%;
+  height: 40%;
+}
+
+.location p {
+
+  margin : 30px 0;
+  font-size : 13px;
+  font-weight: lighter;
+}
+
+.location .map-icon {
+  margin : 0 auto;
+  width: 40%;
+  height : 40%;
+  background-image: url("../../images/maps-and-flags.svg");
+  background-size: 100% 100%;
+}
+
+
+
+.contact {
+  /* 대표번호 */
+  background-color: #eee;
+  color: #333;
+}
+
+.contact > h1 {
+  line-height: 45px;
+  color: #673a71;
+  font-size: 35px;
+}
+
+.time {
+  /* 영업 시간 */
+  background-color: #3f4149;
+  color: #fff;
+}
+
+.time > dis {
+  padding: 0 20% 0 20%;
+}
+
+/* 상담 및 예약 버튼 */
+.call {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+.call:hover {
+  background-color: #673a71;
+  color: #e2d3e5;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* 마우스 오버시 커서 */
+.cursor {
+  cursor: pointer;
+}
+
+/* 반응형 웹 */
+@media all and (max-width: 1200px) {
+  /* 슬라이더 이미지 크기 */
+  .slider > li {
+    height: auto;
+  }
+  .slider {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 786px){
+  .slider_wrap {
+    padding : 10px 10%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* article - 올인원 반응형 */
+  .discription {
+    padding: 5px 7% 5px 7%;
+    transition: padding 0.5s;
+  }
+  .discription > h1 {
+    font-size: 6vw;
+  }
+  .discription > p {
+    font-size: 3.5vw;
+  }
+  .discription > ul > p {
+    font-size: 3.5vw;
+    font-weight: 400;
+  }
+  .discription > ul > li {
+    font-size: 3vw;
+    line-height : 5vw;
+  }
+}
+
+/* 리앤리 슬라이더 */
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  } /* 0~8 : 정지 */
+  8% {
+    margin-left: 0;
+  } /* 8~12.5 : 변이 */
+  12.5% {
+    margin-left: -100%;
+  }
+  20.5% {
+    margin-left: -100%;
+  }
+  25% {
+    margin-left: -200%;
+  }
+  33% {
+    margin-left: -200%;
+  }
+  37.5% {
+    margin-left: -300%;
+  }
+  45.5% {
+    margin-left: -300%;
+  }
+  50% {
+    margin-left: -400%;
+  }
+  58% {
+    margin-left: -400%;
+  }
+  62.5% {
+    margin-left: -500%;
+  }
+  70.5% {
+    margin-left: -500%;
+  }
+  75% {
+    margin-left: -600%;
+  }
+  83% {
+    margin-left: -600%;
+  }
+  87.5% {
+    margin-left: -700%;
+  }
+  95.5% {
+    margin-left: -700%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
