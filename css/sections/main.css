@@ -7,7 +7,7 @@
   overflow: hidden;
   background: url("../../images/linli_intro.png") no-repeat;
   background-position: center;
-  background-size: 1130px 100%;
+  background-size: 1500px 100%;
   background-attachment: fixed;
   color: #bbb;
   height: 400px;
@@ -15,10 +15,10 @@
 
 #intro > h1 {
   display: inline-block;
-  font-size: 50px;
+  font-size: 80px;
   margin: 0 auto;
   padding: 30px;
-  color: #fff;
+  color: #eee;
   font-weight: lighter;
 }
 
@@ -30,6 +30,10 @@
   animation : fadeInText 1s linear forwards;
 }
 
+.intro_detail {
+  display: inline-block;
+  margin : 30px auto;
+}
 .intro_detail:hover {
   background-color: #111 !important;
   opacity: 0.8;
