@@ -244,6 +244,12 @@
   }
 }
 
+@media all and (max-width: 500px){
+  #intro > h1 {
+    font-size : 15vw;
+  }
+}
+
 @media all and (max-width: 786px){
   .slider_wrap {
     padding : 10px 10%;
